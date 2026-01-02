@@ -108,7 +108,7 @@ Access 18+ legal and patent data sources through a unified async API:
 | Category | Sources |
 |----------|---------|
 | **Patents** | Google Patents, USPTO (Applications, Publications, Bulk Data, Petitions), EPO OPS, JPO |
-| **Litigation** | CourtListener (federal courts), USITC, Federal Rules |
+| **Litigation** | Westlaw, Lexis (via dev-browser), CourtListener, USITC, Federal Rules |
 | **Regulatory** | Federal Register, SEC EDGAR, MPEP, USC/CFR |
 | **Legislative** | LegiScan (50 states + Congress), Texas Legislature |
 
