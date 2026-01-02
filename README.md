@@ -24,23 +24,30 @@ Before installing, make sure you have:
    - You need to be a member or have access to private repos
    - Contact your admin if you need access
 
-### Step 1: Add the Marketplace
+### Quick Install (All Plugins)
 
-In Claude Code (interactive mode), run:
+Run this one-liner to install everything:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/SanctionedCodeList/SCL_marketplace/main/install-all.sh | bash
+```
+
+Or clone and run locally:
+
+```bash
+git clone https://github.com/SanctionedCodeList/SCL_marketplace.git
+./SCL_marketplace/install-all.sh
+```
+
+### Manual Install
+
+**Step 1: Add the Marketplace**
 
 ```
 /plugin marketplace add SanctionedCodeList/SCL_marketplace
 ```
 
-Or from the command line:
-
-```bash
-claude plugin marketplace add SanctionedCodeList/SCL_marketplace
-```
-
-### Step 2: Install Plugins
-
-Install individual plugins from the marketplace:
+**Step 2: Install Plugins**
 
 ```
 /plugin install law-tools@scl-marketplace
@@ -50,8 +57,6 @@ Install individual plugins from the marketplace:
 /plugin install best-practices@scl-marketplace
 /plugin install dev-browser@scl-marketplace
 ```
-
-Or install all at once by running each command.
 
 ### Step 3: Verify Installation
 
