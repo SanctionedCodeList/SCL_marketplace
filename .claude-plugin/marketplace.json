@@ -1,0 +1,59 @@
+{
+  "name": "scl-marketplace",
+  "owner": {
+    "name": "SanctionedCodeList"
+  },
+  "metadata": {
+    "description": "Professional-grade Claude Code plugins for legal, document, and office automation"
+  },
+  "plugins": [
+    {
+      "name": "law-tools",
+      "source": {
+        "source": "github",
+        "repo": "SanctionedCodeList/law_tools"
+      },
+      "description": "Legal research toolkit with USPTO, court, SEC, and regulatory data connectors plus document drafting capabilities."
+    },
+    {
+      "name": "writing",
+      "source": {
+        "source": "github",
+        "repo": "SanctionedCodeList/writing"
+      },
+      "description": "Comprehensive writing guidance for professional documents with style guides and cognitive fluency techniques."
+    },
+    {
+      "name": "office-bridge",
+      "source": {
+        "source": "github",
+        "repo": "SanctionedCodeList/office-bridge"
+      },
+      "description": "Microsoft Office automation via Office.js add-ins for Word, Excel, and PowerPoint."
+    },
+    {
+      "name": "python-docx-redline",
+      "source": {
+        "source": "github",
+        "repo": "SanctionedCodeList/python-docx-redline"
+      },
+      "description": "Document creation, editing, and analysis with tracked changes support for .docx files."
+    },
+    {
+      "name": "best-practices",
+      "source": {
+        "source": "github",
+        "repo": "SanctionedCodeList/claude-code-best-practices"
+      },
+      "description": "Claude Code development best practices including the skill-creator skill."
+    },
+    {
+      "name": "dev-browser",
+      "source": {
+        "source": "github",
+        "repo": "SawyerHood/dev-browser"
+      },
+      "description": "Browser automation with persistent page state and LLM-optimized DOM snapshots."
+    }
+  ]
+}

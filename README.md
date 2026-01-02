@@ -24,41 +24,48 @@ Before installing, make sure you have:
    - You need to be a member or have access to private repos
    - Contact your admin if you need access
 
-### Step 1: Install the Marketplace
+### Step 1: Add the Marketplace
 
-Open your terminal and run:
+In Claude Code (interactive mode), run:
 
-```bash
-claude plugins add SanctionedCodeList/SCL_marketplace
+```
+/plugin marketplace add SanctionedCodeList/SCL_marketplace
 ```
 
-You should see output confirming each plugin was added.
-
-### Step 2: Restart Claude Code
-
-For plugins to take effect:
+Or from the command line:
 
 ```bash
-# If running in terminal, exit and restart
-exit
-
-# Then start a new session
-claude
+claude plugin marketplace add SanctionedCodeList/SCL_marketplace
 ```
+
+### Step 2: Install Plugins
+
+Install individual plugins from the marketplace:
+
+```
+/plugin install law-tools@scl-marketplace
+/plugin install writing@scl-marketplace
+/plugin install office-bridge@scl-marketplace
+/plugin install python-docx-redline@scl-marketplace
+/plugin install best-practices@scl-marketplace
+/plugin install dev-browser@scl-marketplace
+```
+
+Or install all at once by running each command.
 
 ### Step 3: Verify Installation
 
 Check that plugins are active:
 
-```bash
-claude plugins list
+```
+/plugin list
 ```
 
 You should see entries for: `law-tools`, `writing`, `office-bridge`, `python-docx-redline`, `best-practices`, `dev-browser`
 
 ### Step 4: Try It Out
 
-Start Claude Code and test a plugin:
+Start using the plugins:
 
 ```
 > Search for Tesla battery patents from 2023
@@ -71,16 +78,16 @@ Claude will automatically use the `law-tools` plugin to search patent databases.
 | Problem | Solution |
 |---------|----------|
 | "Repository not found" | Verify you have access to SanctionedCodeList org |
-| Plugin not appearing | Restart Claude Code completely |
+| Plugin not appearing | Run `/plugin list` to check status |
 | "Command not found: claude" | Install Claude Code CLI first |
 | Authentication error | Run `gh auth login` to authenticate with GitHub |
 
 ### Updating Plugins
 
-To get the latest versions:
+To update the marketplace and plugins:
 
-```bash
-claude plugins update
+```
+/plugin marketplace update scl-marketplace
 ```
 
 ---
@@ -226,26 +233,26 @@ After installation, Claude Code becomes a complete professional platform:
 
 ## Individual Installation
 
-Install plugins separately if you don't need the full suite:
+Install plugins directly from GitHub without using the marketplace:
 
-```bash
+```
 # Legal research and drafting
-claude plugins add SanctionedCodeList/law_tools
+/plugin install SanctionedCodeList/law_tools
 
 # Writing guidance
-claude plugins add SanctionedCodeList/writing
+/plugin install SanctionedCodeList/writing
 
 # Live Office automation
-claude plugins add SanctionedCodeList/office-bridge
+/plugin install SanctionedCodeList/office-bridge
 
 # Document editing with tracked changes
-claude plugins add SanctionedCodeList/python-docx-redline
+/plugin install SanctionedCodeList/python-docx-redline
 
 # Skill creation best practices
-claude plugins add SanctionedCodeList/claude-code-best-practices
+/plugin install SanctionedCodeList/claude-code-best-practices
 
 # Browser automation (external)
-claude plugins add SawyerHood/dev-browser
+/plugin install SawyerHood/dev-browser
 ```
 
 ---
