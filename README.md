@@ -6,13 +6,82 @@ A curated collection of tools that transform Claude Code into a comprehensive le
 
 ---
 
-## Quick Start
+## 🚀 Installation Guide
+
+### Prerequisites
+
+Before installing, make sure you have:
+
+1. **Claude Code CLI installed**
+   ```bash
+   # Check if installed
+   claude --version
+
+   # If not installed, see: https://docs.anthropic.com/claude-code
+   ```
+
+2. **GitHub access** to the [SanctionedCodeList](https://github.com/SanctionedCodeList) organization
+   - You need to be a member or have access to private repos
+   - Contact your admin if you need access
+
+### Step 1: Install the Marketplace
+
+Open your terminal and run:
 
 ```bash
 claude plugins add SanctionedCodeList/SCL_marketplace
 ```
 
-> Requires access to the [SanctionedCodeList](https://github.com/SanctionedCodeList) GitHub organization.
+You should see output confirming each plugin was added.
+
+### Step 2: Restart Claude Code
+
+For plugins to take effect:
+
+```bash
+# If running in terminal, exit and restart
+exit
+
+# Then start a new session
+claude
+```
+
+### Step 3: Verify Installation
+
+Check that plugins are active:
+
+```bash
+claude plugins list
+```
+
+You should see entries for: `law-tools`, `writing`, `office-bridge`, `python-docx-redline`, `best-practices`, `dev-browser`
+
+### Step 4: Try It Out
+
+Start Claude Code and test a plugin:
+
+```
+> Search for Tesla battery patents from 2023
+```
+
+Claude will automatically use the `law-tools` plugin to search patent databases.
+
+### Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| "Repository not found" | Verify you have access to SanctionedCodeList org |
+| Plugin not appearing | Restart Claude Code completely |
+| "Command not found: claude" | Install Claude Code CLI first |
+| Authentication error | Run `gh auth login` to authenticate with GitHub |
+
+### Updating Plugins
+
+To get the latest versions:
+
+```bash
+claude plugins update
+```
 
 ---
 
@@ -206,4 +275,3 @@ claude plugins add SawyerHood/dev-browser
 
 **Recommended External:**
 - [dev-browser](https://github.com/SawyerHood/dev-browser) — Browser automation
-
