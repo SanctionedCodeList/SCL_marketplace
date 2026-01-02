@@ -207,8 +207,3 @@ claude plugins add SawyerHood/dev-browser
 **Recommended External:**
 - [dev-browser](https://github.com/SawyerHood/dev-browser) — Browser automation
 
----
-
-## License
-
-MIT
