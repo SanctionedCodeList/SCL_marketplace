@@ -1,0 +1,34 @@
+{
+  "name": "scl-marketplace",
+  "description": "SanctionedCodeList plugin marketplace - aggregates law tools, writing, office automation, and document processing skills",
+  "owner": {
+    "name": "SanctionedCodeList",
+    "url": "https://github.com/SanctionedCodeList"
+  },
+  "plugins": [
+    {
+      "name": "law-tools",
+      "source": "github:SanctionedCodeList/law_tools",
+      "description": "Legal research toolkit with USPTO, court, SEC, and regulatory data connectors plus document drafting capabilities for memos, briefs, reports, and contracts.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "writing",
+      "source": "github:SanctionedCodeList/writing",
+      "description": "Comprehensive writing guidance for professional documents. Provides style guides, cognitive fluency techniques, structure frameworks, and revision checklists for legal, academic, executive, and business writing.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "office-bridge",
+      "source": "github:SanctionedCodeList/office-bridge",
+      "description": "Microsoft Office automation via Office.js add-ins. Create, edit, and manipulate Word, Excel, and PowerPoint documents through a bridge server.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "python-docx-redline",
+      "source": "github:SanctionedCodeList/python-docx-redline",
+      "description": "Document creation, editing, and analysis with tracked changes support. Work with .docx files including redlining, comments, and CriticMarkup workflows.",
+      "version": "0.1.0"
+    }
+  ]
+}

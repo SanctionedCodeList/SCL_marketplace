@@ -1,0 +1,9 @@
+{
+  "name": "scl-marketplace",
+  "description": "SanctionedCodeList plugin marketplace - law tools, writing, office automation, and document processing",
+  "version": "0.1.0",
+  "author": {
+    "name": "SanctionedCodeList"
+  },
+  "repository": "https://github.com/SanctionedCodeList/SCL_marketplace"
+}
