@@ -275,3 +275,6 @@ claude plugins add SawyerHood/dev-browser
 
 **Recommended External:**
 - [dev-browser](https://github.com/SawyerHood/dev-browser) — Browser automation
+
+**Documentation:**
+- [GitHub CLI Setup](docs/gh-cli-setup.md) — Install and configure `gh` for issue reporting
