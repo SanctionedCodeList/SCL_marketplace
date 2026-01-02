@@ -2,7 +2,7 @@
 
 **Professional-grade Claude Code plugins for legal, document, and office automation.**
 
-A curated collection of tools that transform Claude Code into a comprehensive legal technology and document automation platform.
+A curated collection of tools that transform Claude Code into a comprehensive legal technology, document automation, and development platform.
 
 ---
 
@@ -97,22 +97,60 @@ Features:
 
 ---
 
+### [best-practices](https://github.com/SanctionedCodeList/claude-code-best-practices)
+
+**Claude Code development best practices and skill creation**
+
+The **skill-creator** skill provides guidance for building effective Claude Code skills:
+
+| Concept | Description |
+|---------|-------------|
+| **Progressive disclosure** | Three-level loading: metadata → SKILL.md → resources |
+| **Skill anatomy** | SKILL.md + scripts/ + references/ + assets/ |
+| **Freedom calibration** | Match specificity to task fragility |
+| **Structured output** | Schema design for AI-produced JSON |
+
+Includes templates, validation scripts, and packaging tools for distributing skills.
+
+---
+
+### [dev-browser](https://github.com/SawyerHood/dev-browser) *(Recommended)*
+
+**Browser automation with persistent page state**
+
+Purpose-built for AI agents testing and verifying web applications:
+
+| Feature | Benefit |
+|---------|---------|
+| **Persistent pages** | Navigate once, interact across multiple scripts |
+| **LLM-optimized snapshots** | Structured DOM inspection designed for AI interpretation |
+| **Flexible execution** | Full scripts or step-by-step exploration |
+| **Chrome extension** | Control existing browser with logged-in sessions |
+
+Benchmarks show ~2x faster completion and ~40% lower cost compared to alternatives through stateful server architecture.
+
+---
+
 ## What You Get
 
-After installation, Claude Code becomes a complete legal technology platform:
+After installation, Claude Code becomes a complete professional platform:
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        Claude Code                               │
-├─────────────────────────────────────────────────────────────────┤
-│  RESEARCH          │  DRAFTING           │  EDITING             │
-│  ─────────         │  ────────           │  ───────             │
-│  • Patent search   │  • Legal memos      │  • Live Office docs  │
-│  • Court filings   │  • Briefs/motions   │  • Tracked changes   │
-│  • SEC documents   │  • Contracts        │  • Batch operations  │
-│  • Regulations     │  • Client letters   │  • Format preserve   │
-│  • Legislation     │  • Executive docs   │  • Comment support   │
-└─────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────┐
+│                            Claude Code + SCL                               │
+├───────────────────────────────────────────────────────────────────────────┤
+│  RESEARCH         │  DRAFTING          │  EDITING          │  TESTING     │
+│  ─────────        │  ────────          │  ───────          │  ───────     │
+│  • Patent search  │  • Legal memos     │  • Live Office    │  • Browser   │
+│  • Court filings  │  • Briefs/motions  │  • Tracked changes│    automation│
+│  • SEC documents  │  • Contracts       │  • Batch ops      │  • DOM snaps │
+│  • Regulations    │  • Client letters  │  • Format preserve│  • Sessions  │
+│  • Legislation    │  • Executive docs  │  • Comments       │  • Scripts   │
+├───────────────────────────────────────────────────────────────────────────┤
+│  SKILL DEVELOPMENT                                                         │
+│  • Create custom skills with proper structure and progressive disclosure   │
+│  • Package and distribute skills across teams                              │
+└───────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -133,6 +171,12 @@ claude plugins add SanctionedCodeList/office-bridge
 
 # Document editing with tracked changes
 claude plugins add SanctionedCodeList/python-docx-redline
+
+# Skill creation best practices
+claude plugins add SanctionedCodeList/claude-code-best-practices
+
+# Browser automation (external)
+claude plugins add SawyerHood/dev-browser
 ```
 
 ---
@@ -145,16 +189,23 @@ claude plugins add SanctionedCodeList/python-docx-redline
 | writing | None (pure guidance/skills) |
 | office-bridge | Node.js 18+, Microsoft Office (Mac/Windows) |
 | python-docx-redline | Python 3.10+ |
+| best-practices | None (pure guidance/skills) |
+| dev-browser | Node.js 18+, Chrome/Chromium |
 
 ---
 
 ## Links
 
+**SCL Plugins:**
 - [SanctionedCodeList Organization](https://github.com/SanctionedCodeList)
-- [law-tools Repository](https://github.com/SanctionedCodeList/law_tools)
-- [writing Repository](https://github.com/SanctionedCodeList/writing)
-- [office-bridge Repository](https://github.com/SanctionedCodeList/office-bridge)
-- [python-docx-redline Repository](https://github.com/SanctionedCodeList/python-docx-redline)
+- [law-tools](https://github.com/SanctionedCodeList/law_tools) — Legal research and drafting
+- [writing](https://github.com/SanctionedCodeList/writing) — Professional writing guidance
+- [office-bridge](https://github.com/SanctionedCodeList/office-bridge) — Live Office automation
+- [python-docx-redline](https://github.com/SanctionedCodeList/python-docx-redline) — Document editing
+- [claude-code-best-practices](https://github.com/SanctionedCodeList/claude-code-best-practices) — Skill development
+
+**Recommended External:**
+- [dev-browser](https://github.com/SawyerHood/dev-browser) — Browser automation
 
 ---
 

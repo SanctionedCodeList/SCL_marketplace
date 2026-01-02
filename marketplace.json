@@ -1,6 +1,6 @@
 {
   "name": "scl-marketplace",
-  "description": "SanctionedCodeList plugin marketplace - aggregates law tools, writing, office automation, and document processing skills",
+  "description": "SanctionedCodeList plugin marketplace - legal tools, writing guidance, document automation, browser testing, and development best practices",
   "owner": {
     "name": "SanctionedCodeList",
     "url": "https://github.com/SanctionedCodeList"
@@ -28,6 +28,18 @@
       "name": "python-docx-redline",
       "source": "github:SanctionedCodeList/python-docx-redline",
       "description": "Document creation, editing, and analysis with tracked changes support. Work with .docx files including redlining, comments, and CriticMarkup workflows.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "best-practices",
+      "source": "github:SanctionedCodeList/claude-code-best-practices",
+      "description": "Claude Code development best practices including the skill-creator skill for building effective Claude Code skills with proper structure and progressive disclosure.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "dev-browser",
+      "source": "github:SawyerHood/dev-browser",
+      "description": "Browser automation with persistent page state. LLM-optimized DOM snapshots, flexible script execution, and Chrome extension support for controlling logged-in sessions.",
       "version": "0.1.0"
     }
   ]
