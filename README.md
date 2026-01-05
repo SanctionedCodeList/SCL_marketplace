@@ -180,9 +180,11 @@ Features:
 
 ### [best-practices](https://github.com/SanctionedCodeList/claude-code-best-practices)
 
-**Claude Code development best practices and skill creation**
+**Claude Code development best practices, skill creation, and session history**
 
-The **skill-creator** skill provides guidance for building effective Claude Code skills:
+Two skills for Claude Code power users:
+
+**skill-creator** — Guidance for building effective Claude Code skills:
 
 | Concept | Description |
 |---------|-------------|
@@ -191,7 +193,16 @@ The **skill-creator** skill provides guidance for building effective Claude Code
 | **Freedom calibration** | Match specificity to task fragility |
 | **Structured output** | Schema design for AI-produced JSON |
 
-Includes templates, validation scripts, and packaging tools for distributing skills.
+**sessions** — Search and retrieve past Claude Code conversations:
+
+| Feature | Description |
+|---------|-------------|
+| **Semantic search** | Find sessions by natural language queries using embeddings |
+| **Metadata retrieval** | Get message counts, tools used, and summaries without loading full content |
+| **Filtered reading** | Read specific message types (user, assistant, tool_use, etc.) |
+| **Project scoping** | List and search sessions for specific projects |
+
+Useful for continuing past work, auditing tool usage, or finding how you solved similar problems before.
 
 ---
 

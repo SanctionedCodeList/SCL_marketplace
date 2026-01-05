@@ -45,7 +45,7 @@
         "source": "github",
         "repo": "SanctionedCodeList/claude-code-best-practices"
       },
-      "description": "Claude Code development best practices including the skill-creator skill."
+      "description": "Claude Code development best practices including skill creation guidance and session history search."
     },
     {
       "name": "dev-browser",
