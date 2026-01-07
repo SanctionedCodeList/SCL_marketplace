@@ -46,14 +46,6 @@
         "repo": "SanctionedCodeList/claude-code-best-practices"
       },
       "description": "Claude Code development best practices including skill creation guidance and session history search."
-    },
-    {
-      "name": "dev-browser",
-      "source": {
-        "source": "github",
-        "repo": "SawyerHood/dev-browser"
-      },
-      "description": "Browser automation with persistent page state and LLM-optimized DOM snapshots."
     }
   ]
 }
